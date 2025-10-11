@@ -4,6 +4,7 @@ import { Container, createTheme, ThemeProvider } from '@mui/material'
 import './App.css'
 import HeroBanner from './components/Hero'
 import Footer from './components/Footer'
+import ProjectList from './components/ProjectList'
 
 const App = () => {
     const theme = createTheme({
@@ -17,6 +18,7 @@ const App = () => {
             <Header />
             <Container maxWidth='md'>
                 <HeroBanner />
+                <ProjectList />
                 <Footer />
             </Container>
         </ThemeProvider>
