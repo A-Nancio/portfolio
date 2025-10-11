@@ -1,11 +1,11 @@
-import { Box, Grid, Typography } from '@mui/material'
+import { Box, Button, Grid, Typography } from '@mui/material'
 import mascotImage from '../assets/mascot.svg'
 
 const HeroBanner = () => {
     return (
-        <Grid container spacing={6} sx={{ justifyContent: "space-between", alignItems: 'center' }}>
-            <Grid size={{ xs: 12, md: 7 }} order={{ xs: 2, md: 1 }} sx={{ width: '70%' }}>
-                <Typography variant='h3'>
+        <Grid container sx={{ textAlign: 'center', justifyContent: 'center', alignItems: 'center', mb: 5 }}>
+            <Grid size={{ xs: 12, md: 7 }} order={{ xs: 2, md: 1 }} sx={{ width: '70%', textAlign: { md: 'left', xs: 'center'} }}>
+                <Typography variant='h3' sx={{ fontWeight: 'bold' }}>
                     Hi! I'm António
                 </Typography>
                 <Typography variant='subtitle1' gutterBottom>
@@ -16,8 +16,11 @@ const HeroBanner = () => {
                 <Typography variant='subtitle1' gutterBottom>
                     Everything on this site is written & developed by me, not AI.
                 </Typography>
+                <Button variant='outlined' color='inherit' sx={{ mt: 1 }}>
+                    About me
+                </Button>
             </Grid>
-            <Grid size={{ xs: 12, md: 5 }} order={{ xs: 1, md: 2 }} sx={{ justifyContent: 'center' }}>
+            <Grid size={{ xs: 12, md: 5 }} order={{ xs: 1, md: 2 }}>
                 <Box component='img' src={mascotImage} alt='mascotImage' sx={{ width: '80%', maxWidth: '250px' }}/>
             </Grid>
         </Grid>
