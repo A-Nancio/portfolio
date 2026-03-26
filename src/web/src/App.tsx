@@ -1,4 +1,4 @@
-import '@fontsource/Nunito'
+import '@fontsource/nunito'
 import Header from './components/Header'
 import { Container, createTheme, ThemeProvider } from '@mui/material'
 import './App.css'
